@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&display=swap');
+
+body {
+  text-align: center;
+  background-color: #7c76766c;
+}
+
+#page-title{
+  margin-top: 20px;
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 0rem;
+  color: black;
+}
+
+#level-title {
+  margin: 30px auto auto auto;
+  text-transform: uppercase;
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 1.25rem;
+  color: black;
+}
+
+#description {
+  text-align: center;
+  margin: 40px auto auto auto;
+  background-color: #7c76766c;
+  width: 500px;
+  height: auto;
+  padding: 20px;
+  text-transform: uppercase;
+  font-family: 'Nerko One', cursive;
+  font-size: 0.45rem;
+  color: #000000;
+}
+
+#play-h2 {
+  text-transform: uppercase;
+  font-family: 'Nerko One', cursive;
+  font-weight: 500px;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.container {
+  background-color: #000000;
+  height: 220px;
+  width: 220px;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 20%;
+  border: 10px solid #000000;
+
+}
+
+.btn {
+  justify-content: center;
+  margin: 10px;
+  display: inline-block;
+  height: 75px;
+  width: 75px;
+  border: 3px solid white;
+  border-radius: 20%;
+}
+
+.btn-start{
+  justify-content: center;
+  margin: 22px auto 15px auto;
+  padding-bottom: 25px;
+  display: inline-block;
+  height: 20px;
+  width: 100px;
+  border: 4px solid #000000;
+  border-radius: 20%;
+  background-color: #7c76769d;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
