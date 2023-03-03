@@ -6,23 +6,32 @@ var level = 0;
 
 $('#btn-start').click(function() {
     if(!started){
-        $("#btn-start").hide()
-        $("#level-title").text("Level " + level);
-        nextSequence();
-        started = true;
+        startGame()
     }
 })
 
 $('.btn').click(function() {
     if(started){
-        var userChosenColour = $(this).attr("id");
-        userClickedPattern.push(userChosenColour);
+        userAnswer($(this).attr("id"))
+    }
+})
 
+function startGame(){
+    $("#btn-start").hide()
+    $("#level-title").text("Level " + level);
+    nextSequence();
+    started = true;
+}
+
+function userAnswer(chosenColour){
+    if (started){
+        var userChosenColour = chosenColour;
+        userClickedPattern.push(userChosenColour);
         playSound(userChosenColour);
         animatePress(userChosenColour);
         checkAnswer(userClickedPattern.length-1);
     }
-})
+}
 
 function checkAnswer(currentLevel) {
 
@@ -86,4 +95,41 @@ function startOver() {
     gamePattern = [];
     started = false;
     
+}
+
+$(document).on("keypress", function(event) {
+    userChosenKey(event.key)
+    console.log(event.key)
+});
+
+
+function userChosenKey(key){
+    
+    switch (key) {
+        case "5":
+            userAnswer("yellow")
+            break;
+        
+        case "6":
+            userAnswer("blue")
+            break;
+
+        
+        case "8":
+            userAnswer("green")
+            break;
+       
+        case "9":
+            userAnswer("red")
+            break;
+
+        case "Enter":
+            if (!started){
+                startGame()
+            }
+            break;
+
+        default:
+            break;
+    }
 }
