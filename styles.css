@@ -29,14 +29,14 @@ body {
   height: auto;
   padding: 20px;
   text-transform: uppercase;
-  font-family: 'Nerko One', cursive;
-  font-size: 0.45rem;
+  font-family: 'Signika Negative', cursive;
+  font-size: 0.55rem;
   color: #000000;
 }
 
 #play-h2 {
   text-transform: uppercase;
-  font-family: 'Nerko One', cursive;
+  font-family: 'Signika Negative', cursive;
   font-weight: 500px;
   font-size: 1rem;
   color: #000000;
@@ -60,7 +60,7 @@ body {
   width: 85px;
   border: 3px solid white;
   border-radius: 20%;
-  font-family: 'Arvo', cursive;
+  font-family: 'Signika Negative', cursive;
   font-size: 2.5rem;
   color: #ffffff;
 }
